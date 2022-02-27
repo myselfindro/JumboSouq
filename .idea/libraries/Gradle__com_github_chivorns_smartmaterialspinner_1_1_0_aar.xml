@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.chivorns:smartmaterialspinner:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../InappSubscription-master/.gradle/caches/transforms-2/files-2.1/59a6c17ed35b89625f92d0d4be186b8a/jetified-smartmaterialspinner-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../InappSubscription-master/.gradle/caches/transforms-2/files-2.1/59a6c17ed35b89625f92d0d4be186b8a/jetified-smartmaterialspinner-1.1.0/res" />
+      <root url="file://$PROJECT_DIR$/../InappSubscription-master/.gradle/caches/transforms-2/files-2.1/59a6c17ed35b89625f92d0d4be186b8a/jetified-smartmaterialspinner-1.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../InappSubscription-master/.gradle/caches/modules-2/files-2.1/com.github.chivorns/smartmaterialspinner/1.1.0/5e7931c9fa389a796cf7b4a0b70f02e5ece36962/smartmaterialspinner-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../InappSubscription-master/.gradle/caches/modules-2/files-2.1/com.github.chivorns/smartmaterialspinner/1.1.0/ca33bb209aa5402c31a05777fb482cd49fbaa9d6/smartmaterialspinner-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

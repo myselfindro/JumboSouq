@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/navextralay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.87"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/navlay"
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/l1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:background="@color/secondary_color_red"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/user_profilename"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:text=""
+                                android:textColor="#ffffff" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/dashboardlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/drower_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/lbordfer"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnAboutus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <TextView
+                            android:id="@+id/dashboard_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="About Us"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lborder"
+                        android:layout_width="fill_parent"
+                        android:visibility="gone"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnContactus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <TextView
+                            android:id="@+id/Replacement_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:padding="5dp"
+                            android:text="Contact Us"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/lbordersss"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+
+                    <!--  ======heder part-->
+
+                    <LinearLayout
+                        android:id="@+id/btnPrivacypolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/My_Account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/phone_linear_lay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+
+                                <TextView
+                                    android:id="@+id/adapter_ex_list_ibExpand_up"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="Privacy Policy"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/lgborders6"
+                        android:layout_width="fill_parent"
+                        android:visibility="gone"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnTandC"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/handover_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="Terms and Conditions"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                    <!-- ExpandableListView android:visibility="gone"-->
+
+
+                    <RelativeLayout
+                        android:id="@+id/lborvdersss"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"
+                        android:visibility="visible"></RelativeLayout>
+                    <!-- ExpandableListView android:visibility="gone"-->
+
+
+                    <RelativeLayout
+                        android:id="@+id/btnFAQ"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <TextView
+                            android:id="@+id/logout_tex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="FAQs"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:src="@drawable/ic_forward"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lborvpdersss"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnCancel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <TextView
+                            android:id="@+id/cancellation_returns_tex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="Cancellation and Returns"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnRefund"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <TextView
+                            android:id="@+id/refund_policy_tex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="Refund Policy"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/btnNewsletter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <TextView
+                            android:id="@+id/subscribe_newsletter_tex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="Subscribe to our newsletter"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_Logout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_50sdp">
+
+                        <TextView
+                            android:id="@+id/tvLogout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Logout"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:visibility="gone"
+                        android:background="#D5CFCF"></RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

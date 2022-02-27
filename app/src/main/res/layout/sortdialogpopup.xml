@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittext_squar_white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_10"
+        android:paddingBottom="@dimen/padding_10"
+        android:text="Sort By"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/graylight" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_20"
+        android:paddingRight="@dimen/padding_20">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layoutDirection="rtl"
+            android:text="Product Name"
+            android:textAlignment="textStart"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layoutDirection="rtl"
+            android:text="Price"
+            android:textAlignment="textStart"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layoutDirection="rtl"
+            android:text="Product Type"
+            android:textAlignment="textStart"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layoutDirection="rtl"
+            android:text="Rating"
+            android:textAlignment="textStart"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layoutDirection="rtl"
+            android:text="Recently Added"
+            android:textAlignment="textStart"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/secondary_color_red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_10"
+            android:text="Cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_color_red"
+            android:textSize="@dimen/txt_14sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/secondary_color_red" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding_10"
+            android:paddingBottom="@dimen/padding_10"
+            android:text="Apply"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_color_red"
+            android:textSize="@dimen/txt_14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

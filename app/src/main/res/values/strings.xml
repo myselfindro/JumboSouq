@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">JumboSouq</string>
+    <string name="welcome_dohasooq">WELCOME TO Jumbo Souq </string>
+
+    <string name="nameerror">Enter email address</string>
+    <string name="passerror">Enter Password</string>
+    <!--Common toast-->
+    <string name="nolink">No link exists</string>
+    <string name="noonternate">Connection not found. Please check your internet connection</string>
+    <string name="errormsg">Connection Error, Please try again later</string>
+    <string name="back">Tap back again to exit</string>
+    <string name="nodata">No Data</string>
+    <string name="found">Found</string>
+    <string name="typehere">Type here ...</string>
+    <string name="loading">Loading Data, Please wait...</string>
+    <string name="searchhere">Search here ...</string>
+    <string name="facebook_app_id">224291749122064</string>
+    <string name="fb_login_protocol_scheme">fb224291749122064</string>
+    <string name="defauldet_web_client_id">167305285973-amqtclnqo1qdi568rv2bfosf95cgov0i.apps.googleusercontent.com</string>
+    <string name="strike_text"><strike>Regular Price:QAR 899</strike></string>
+    <string name="line">MRP  <strike> QAR,4500 </strike> </string>
+
+
+</resources>

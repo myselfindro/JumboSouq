@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvCategoryname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_weight="0.1"
+            android:drawableLeft="@drawable/ic_catogrypage_icon"
+            android:gravity="center_vertical"
+            android:text=" Home Appllances"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/noncollaspeIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow"/>
+
+
+        <ImageView
+            android:id="@+id/collaspeIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:visibility="gone"
+            android:rotation="90"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow"/>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lborder"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#D5CFCF" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_subcategory"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

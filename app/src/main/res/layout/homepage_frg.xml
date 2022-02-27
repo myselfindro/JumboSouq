@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DAD9D9">
+
+
+    <ScrollView
+        android:id="@+id/scrollVw"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/search_home"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_toStartOf="@+id/relativeLayoutcart"
+        android:layout_toLeftOf="@+id/relativeLayoutcart"
+        android:layout_toEndOf="@+id/appname"
+        android:layout_toRightOf="@+id/appname"
+        android:background="@drawable/buttonstyle_round_white"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:visibility="visible">
+
+        <!-- <com.resto.online_shopping.customdesigns.CustomTextView
+             android:id="@+id/search_icon"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="5dp"
+             android:background="@drawable/search_icon"
+             android:textColor="@color/colorPrimary"
+             android:textSize="15dp"
+             app:font_name="regular" />-->
+
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/nav"
+            android:layout_alignBottom="@+id/nav"
+            android:layout_gravity="center"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="-10dp"
+            android:layout_toStartOf="@+id/search_icon"
+            android:layout_toLeftOf="@+id/search_icon"
+            android:layout_toEndOf="@+id/nav"
+            android:layout_toRightOf="@+id/nav"
+            android:background="@null"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="Search"
+            android:inputType="textPersonName"
+            android:paddingRight="5dp"
+            android:textColorHint="@color/black"
+            android:textSize="14dp"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/nav"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_launcher_background"
+             />
+    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:orientation="vertical"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/primary_color_blue">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bangalore white field Kormangla 700034,5 block   "
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly deals"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                   />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New arrivals"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smart Phones"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speakers"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Headsets"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_10sdp"/>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/dive"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/aa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                >
+
+                <!-- android:visibility="gone"-->
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:background="@drawable/home_page_first_bener"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+              <ImageView
+               android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                  android:layout_marginTop="@dimen/_5sdp"
+               android:background="@drawable/home_page_secon_bener">
+
+              </ImageView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Deals"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:id="@+id/lbordersss"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="#D5CFCF"
+                    >
+                </RelativeLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/bestselling_prod_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Arrivals"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="#D5CFCF"
+                        >
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/New_arrivals_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Smart Phones"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="#D5CFCF"
+                        >
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Smart_phones_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speakers"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <RelativeLayout
+
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="#D5CFCF"
+                        >
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Speakers_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Headsets"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="#D5CFCF"
+                        >
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/Headset_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="  Shop by Category"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@color/secondary_color_red"
+                    android:layout_gravity="center"
+                    android:gravity="fill_vertical"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Shop_by_Category_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Featured products"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="#D5CFCF"
+                    >
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/featured_products_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recently added"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="#D5CFCF"
+                    >
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recently_added_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_40sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Best seller products"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="#D5CFCF"
+                    >
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/bestseller_products_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+</ScrollView>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/main_futter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

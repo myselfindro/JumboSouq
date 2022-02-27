@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    tools:context=".activities.Category">
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_7sdp"
+                                app:layout_anchor="@+id/appBarLayout"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                app:layout_anchorGravity="start|center"
+                                app:srcCompat="@drawable/hamburger_menu" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_120sdp"
+                                    android:layout_height="@dimen/_33sdp"
+                                    android:layout_centerInParent="false"
+                                    android:layout_centerVertical="false"
+                                    android:src="@drawable/logoname"
+                                    tools:ignore="VectorDrawableCompat" />
+
+
+                                <ImageView
+                                    android:id="@+id/cart"
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:gravity="center"
+                                    android:background="@drawable/cart_blue"/>
+
+
+
+
+                                <ImageView
+                                    android:id="@+id/btnHeart"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/ic_heart"
+                                    android:visibility="gone"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_toLeftOf="@+id/cart"/>
+
+                                <TextView
+                                    android:id="@+id/numbercart"
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:text="2"
+                                    android:layout_marginRight="@dimen/_7sdp"
+                                    android:background="@drawable/ic_round"
+                                    android:gravity="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_6sdp"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                        <!--        <LinearLayout-->
+                        <!--            android:id="@+id/back_main"-->
+                        <!--            android:layout_width="40dp"-->
+                        <!--            android:layout_height="40dp"-->
+                        <!--            android:layout_alignParentStart="true"-->
+                        <!--            android:layout_alignParentLeft="true"-->
+                        <!--            android:layout_centerVertical="true">-->
+
+                        <!--            <TextView-->
+                        <!--                android:id="@+id/iv"-->
+                        <!--                android:layout_width="@dimen/_20sdp"-->
+                        <!--                android:layout_height="@dimen/_25sdp"-->
+                        <!--                android:layout_gravity="center_vertical"-->
+                        <!--                android:layout_marginLeft="15dp"-->
+                        <!--                android:background="@drawable/hamburger_menu"-->
+                        <!--                android:gravity="center"-->
+                        <!--                android:textColor="@color/black"-->
+                        <!--                android:textSize="20dp" />-->
+
+
+                        <!--        </LinearLayout>-->
+
+                        <!--        &lt;!&ndash;app:srcCompat="@drawable/ds_logo"  lightingsouq_logo&ndash;&gt;-->
+                        <!--        <ImageView-->
+                        <!--            android:id="@+id/appname"-->
+                        <!--            android:layout_width="@dimen/_120sdp"-->
+                        <!--            android:layout_height="@dimen/_60sdp"-->
+                        <!--            android:layout_centerInParent="false"-->
+                        <!--            android:layout_centerVertical="false"-->
+                        <!--            android:layout_marginLeft="@dimen/_20sdp"-->
+                        <!--            app:srcCompat="@drawable/ic_english_jumbosouq_logo"-->
+                        <!--            tools:ignore="VectorDrawableCompat" />-->
+
+
+                        <!--        <RelativeLayout-->
+
+                        <!--            android:id="@+id/relativeLayoutcart"-->
+                        <!--            android:layout_width="@dimen/_40sdp"-->
+                        <!--            android:layout_height="@dimen/_40sdp"-->
+                        <!--            android:layout_centerVertical="true"-->
+                        <!--            android:layout_marginRight="5dp"-->
+                        <!--            android:layout_toStartOf="@+id/wish_list"-->
+                        <!--            android:layout_toLeftOf="@+id/wish_list">-->
+
+
+                        <!--            <TextView-->
+                        <!--                android:id="@+id/cart"-->
+                        <!--                android:layout_width="@dimen/_20sdp"-->
+                        <!--                android:layout_height="@dimen/_20sdp"-->
+                        <!--                android:layout_centerInParent="true"-->
+                        <!--                android:layout_centerHorizontal="true"-->
+                        <!--                android:layout_centerVertical="true"-->
+                        <!--                android:background="@drawable/cart_blue"-->
+                        <!--                android:gravity="center"-->
+                        <!--                android:textColor="@color/black" />-->
+
+                        <!--            <TextView-->
+                        <!--                android:id="@+id/numbercart"-->
+                        <!--                android:layout_width="15dp"-->
+                        <!--                android:layout_height="15dp"-->
+                        <!--                android:layout_alignParentEnd="true"-->
+                        <!--                android:layout_alignParentRight="true"-->
+                        <!--                android:layout_marginTop="5dp"-->
+                        <!--                android:background="@drawable/ic_launcher_background"-->
+                        <!--                android:gravity="center"-->
+                        <!--                android:textColor="@color/black"-->
+                        <!--                android:textSize="8dp"-->
+                        <!--                android:visibility="gone" />-->
+                        <!--        </RelativeLayout>-->
+
+
+                        <!--        &lt;!&ndash; visibility="gone"ssssssss&ndash;&gt;-->
+                        <!--        <TextView-->
+                        <!--            android:id="@+id/wish_list"-->
+                        <!--            android:layout_width="15dp"-->
+                        <!--            android:layout_height="15dp"-->
+                        <!--            android:layout_alignParentEnd="true"-->
+                        <!--            android:layout_alignParentRight="true"-->
+                        <!--            android:layout_centerVertical="true"-->
+                        <!--            android:layout_marginEnd="15dp"-->
+                        <!--            android:layout_marginRight="15dp"-->
+                        <!--            android:background="@drawable/ic_launcher_background"-->
+                        <!--            android:textColor="@color/black"-->
+                        <!--            android:textSize="15dp" />-->
+
+
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+
+                <!--        <LinearLayout-->
+                <!--            android:id="@+id/back_main"-->
+                <!--            android:layout_width="40dp"-->
+                <!--            android:layout_height="40dp"-->
+                <!--            android:layout_alignParentStart="true"-->
+                <!--            android:layout_alignParentLeft="true"-->
+                <!--            android:layout_centerVertical="true">-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/iv"-->
+                <!--                android:layout_width="@dimen/_20sdp"-->
+                <!--                android:layout_height="@dimen/_25sdp"-->
+                <!--                android:layout_gravity="center_vertical"-->
+                <!--                android:layout_marginLeft="15dp"-->
+                <!--                android:background="@drawable/hamburger_menu"-->
+                <!--                android:gravity="center"-->
+                <!--                android:textColor="@color/black"-->
+                <!--                android:textSize="20dp" />-->
+
+
+                <!--        </LinearLayout>-->
+
+                <!--        &lt;!&ndash;app:srcCompat="@drawable/ds_logo"  lightingsouq_logo&ndash;&gt;-->
+                <!--        <ImageView-->
+                <!--            android:id="@+id/appname"-->
+                <!--            android:layout_width="@dimen/_120sdp"-->
+                <!--            android:layout_height="@dimen/_60sdp"-->
+                <!--            android:layout_centerInParent="false"-->
+                <!--            android:layout_centerVertical="false"-->
+                <!--            android:layout_marginLeft="@dimen/_20sdp"-->
+                <!--            app:srcCompat="@drawable/ic_english_jumbosouq_logo"-->
+                <!--            tools:ignore="VectorDrawableCompat" />-->
+
+
+                <!--        <RelativeLayout-->
+
+                <!--            android:id="@+id/relativeLayoutcart"-->
+                <!--            android:layout_width="@dimen/_40sdp"-->
+                <!--            android:layout_height="@dimen/_40sdp"-->
+                <!--            android:layout_centerVertical="true"-->
+                <!--            android:layout_marginRight="5dp"-->
+                <!--            android:layout_toStartOf="@+id/wish_list"-->
+                <!--            android:layout_toLeftOf="@+id/wish_list">-->
+
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/cart"-->
+                <!--                android:layout_width="@dimen/_20sdp"-->
+                <!--                android:layout_height="@dimen/_20sdp"-->
+                <!--                android:layout_centerInParent="true"-->
+                <!--                android:layout_centerHorizontal="true"-->
+                <!--                android:layout_centerVertical="true"-->
+                <!--                android:background="@drawable/cart_blue"-->
+                <!--                android:gravity="center"-->
+                <!--                android:textColor="@color/black" />-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/numbercart"-->
+                <!--                android:layout_width="15dp"-->
+                <!--                android:layout_height="15dp"-->
+                <!--                android:layout_alignParentEnd="true"-->
+                <!--                android:layout_alignParentRight="true"-->
+                <!--                android:layout_marginTop="5dp"-->
+                <!--                android:background="@drawable/ic_launcher_background"-->
+                <!--                android:gravity="center"-->
+                <!--                android:textColor="@color/black"-->
+                <!--                android:textSize="8dp"-->
+                <!--                android:visibility="gone" />-->
+                <!--        </RelativeLayout>-->
+
+
+                <!--        &lt;!&ndash; visibility="gone"ssssssss&ndash;&gt;-->
+                <!--        <TextView-->
+                <!--            android:id="@+id/wish_list"-->
+                <!--            android:layout_width="15dp"-->
+                <!--            android:layout_height="15dp"-->
+                <!--            android:layout_alignParentEnd="true"-->
+                <!--            android:layout_alignParentRight="true"-->
+                <!--            android:layout_centerVertical="true"-->
+                <!--            android:layout_marginEnd="15dp"-->
+                <!--            android:layout_marginRight="15dp"-->
+                <!--            android:background="@drawable/ic_launcher_background"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="15dp" />-->
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/nav_search"
+                layout="@layout/nav_search"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_90sdp" />
+
+            <include
+                android:id="@+id/ll_main"
+                layout="@layout/main_category"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/fl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"/>
+
+
+
+        </FrameLayout>
+
+
+        <fragment
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            class = "com.jumbosouq.com.fargment.DrawerFragment" />
+
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</LinearLayout>

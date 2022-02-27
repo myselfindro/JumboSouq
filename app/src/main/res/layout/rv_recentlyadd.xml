@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120sdp"
+    android:background="@android:color/white"
+    android:layout_margin="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/btnDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/Img"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/recentlyadd"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toners and Ink Cartridges"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_color_red"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/_8sdp"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_6sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/btnchangeAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Now"
+                    android:textColor="@color/secondary_color_red"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <LinearLayout
+                    android:id="@+id/btnBuy"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_round"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@drawable/ic_forward"
+                        app:tint="@color/white"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

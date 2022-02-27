@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Products">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/products_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/nav_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp" />
+
+
+            <include
+                layout="@layout/main_productcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_90sdp" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_layer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#66000000"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+    <include layout="@layout/bottom_sheet" />
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
